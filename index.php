@@ -5,9 +5,9 @@
  * 2.加载函数库
  * 3.启动框架.
  */
-define('IMOOC',realpath('/'));
-define('CORE',IMOOC.'/core');
-define('APP',IMOOC.'/app');
+define('MYPHP',realpath('./'));
+define('CORE',MYPHP.'./core');
+define('APP',MYPHP.'./app');
 
 define('DEBUG',true);
 
@@ -18,4 +18,4 @@ if (DEBUG){
 }
 
 include CORE.'/commom/function.php';
-p(IMOOC);
+p(MYPHP);
