@@ -6,8 +6,8 @@
  * 3.启动框架.
  */
 define('MYPHP',realpath('./'));
-define('CORE',MYPHP.'./core');
-define('APP',MYPHP.'./app');
+define('CORE',MYPHP.'core');
+define('APP',MYPHP.'dapp');
 
 define('DEBUG',true);
 
