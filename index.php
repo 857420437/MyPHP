@@ -3,7 +3,7 @@
  * 入口文件
  * 1.定义常量
  * 2.加载函数库
- * 3.启动框架
+ * 3.启动框架.
  */
 define('IMOOC',realpath('/'));
 define('CORE',IMOOC.'/core');
