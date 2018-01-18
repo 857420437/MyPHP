@@ -18,13 +18,13 @@ class route
          * 2.获取URL 参数部分
          * 3/返回对应控制器和方法
          */
-        if (isset($_SERVER['REQUEST_URI'])&&$_SERVER['REQUEST_URI']!='/'){
-            $path = $_SERVER['REQUEST_URI'];
-            $patharr = explode('/',trim($path,'/'));
-            p($patharr);
-        }else{
-            $this->ctrl = 'index';
-            $this->ctrl = 'index';
-        }
+//        if (isset($_SERVER['REQUEST_URI'])&&$_SERVER['REQUEST_URI']!='/'){
+//            $path = $_SERVER['REQUEST_URI'];
+//            $patharr = explode('/',trim($path,'/'));
+//            p($patharr);
+//        }else{
+//            $this->ctrl = 'index';
+//            $this->ctrl = 'index';
+//        }
     }
 }
