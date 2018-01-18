@@ -21,6 +21,7 @@ class route
         if (isset($_SERVER['REQUEST_URI'])&&$_SERVER['REQUEST_URI']!='/'){
             $path = $_SERVER['REQUEST_URI'];
             $patharr = explode('/',trim($path,'/'));
+            p($patharr);
             if (isset($patharr[0])){
                 $this->ctrl = $patharr[0];
                 unset($patharr[0]);
@@ -33,6 +34,7 @@ class route
             }
             $count = count($patharr)+2;
             $i = 2;
+            p($patharr);
             while ($i<$count){
                 if (isset($patharr[$i+1])) {
                     $_GET[$patharr[$i]] = $patharr[$i + 1];
