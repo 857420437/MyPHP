@@ -5,9 +5,9 @@
  * 2.加载函数库
  * 3.启动框架.
  */
-define('MYPHP',realpath(' /'));
-define('CORE',MYPHP.'core');
-define('APP',MYPHP.'dapp');
+define('MYPHP',realpath('./'));
+define('CORE',MYPHP.'/core');
+define('APP',MYPHP.'/app');
 
 define('DEBUG',true);
 
@@ -17,5 +17,5 @@ if (DEBUG){
     ini_set('display_error','Off');
 }
 
-include CORE.'/commom/function.php';
+include CORE.'/common/function.php';
 p(MYPHP);
