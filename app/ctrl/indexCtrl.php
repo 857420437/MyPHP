@@ -10,5 +10,8 @@ class indexCtrl{
     public function index(){
         p('this is index');
         $model = new \core\lib\model();
+        $sql = "SELECT * FROM c";
+        $res = $model->query($sql);
+        p($res->fetchAll());
     }
 }
