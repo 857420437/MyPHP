@@ -16,8 +16,9 @@ class imooc
         if (isset($classMap[$class])){
             return true;
         }
-        if (is_file(IMOOC.$class.'.php')){
-            include IMOOC.$class.'.php';
+        $file = IMOOC.'/'.$class.'.php';
+        if (is_file($file)){
+            include $file;
             self::$classMap[$class] = $class;
         }else{
             return false;
