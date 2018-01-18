@@ -9,5 +9,6 @@ namespace app\ctrl;
 class indexCtrl{
     public function index(){
         p('this is index');
+        $model = new \core\lib\model();
     }
 }
