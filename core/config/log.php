@@ -6,5 +6,8 @@
  * Time: 下午5:19
  */
 return array(
-    'DRIVE'=>'File'
+    'DRIVE'=>'file',
+    'OPTION'=>array(
+        'PATH'=>IMOOK.'/log/'
+    )
 );

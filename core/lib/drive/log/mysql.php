@@ -6,7 +6,7 @@
  * Time: 下午5:19
  */
 namespace core\lib\drive\log;
-class file
+class mysql
 {
     public function log($name)
     {
