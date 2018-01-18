@@ -8,6 +8,6 @@
 return array(
     'DRIVE'=>'file',
     'OPTION'=>array(
-        'PATH'=>IMOOK.'/log/'
+        'PATH'=>IMOOC.'/log/'
     )
 );
