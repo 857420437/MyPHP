@@ -6,12 +6,12 @@
  * Time: 下午2:55
  */
 namespace app\ctrl;
-class indexCtrl{
+class indexCtrl extends \core\imooc {
     public function index(){
-        p('this is index');
-        $model = new \core\lib\model();
-        $sql = "SELECT * FROM c";
-        $res = $model->query($sql);
-        p($res->fetchAll());
+        $data = 'hello world';
+        $title = '视图';
+        $this->assign('title',$title);
+        $this->assign('data',$data);
+        $this->display('index.html');
     }
 }
