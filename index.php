@@ -7,7 +7,7 @@
  */
 define('MYPHP',realpath('./'));
 define('CORE',MYPHP.'/core');
-define('APP',MYPHP.'/app');g
+define('APP',MYPHP.'/app');
 
 define('DEBUG',true);
 
