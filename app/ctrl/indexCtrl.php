@@ -8,6 +8,9 @@
 namespace app\ctrl;
 class indexCtrl extends \core\imooc {
     public function index(){
+
+        $temp = \core\lib\conf::get('CTRL','route');
+        print_r($temp);
         $data = 'hello world';
         $title = '视图';
         $this->assign('title',$title);

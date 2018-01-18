@@ -6,6 +6,7 @@
  * Time: 上午10:13
  */
 namespace core\lib;
+use core\lib\conf;
 class route
 {
     public $ctrl;
@@ -29,7 +30,7 @@ class route
                 $this->action = $patharr[1];
                 unset($patharr[1]);
             }else{
-                $this->action = 'index';
+                $this->action = conf::get('ACTION','route');
             }
             $count = count($patharr)+2;
             $i = 2;
@@ -43,8 +44,8 @@ class route
 
 
         }else{
-            $this->ctrl = 'index';
-            $this->ctrl = 'index';
+            $this->ctrl = conf::get('CTRL','route');
+            $this->ctrl = conf::get('ACTION','route');
         }
     }
 }
