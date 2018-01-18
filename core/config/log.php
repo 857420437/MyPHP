@@ -6,5 +6,5 @@
  * Time: 下午5:19
  */
 return array(
-    'DRIVE'=>'file'
+    'DRIVE'=>'File'
 );
