@@ -21,7 +21,14 @@ class route
         if (isset($_SERVER['REQUEST_URI'])&&$_SERVER['REQUEST_URI']!='/'){
             $path = $_SERVER['REQUEST_URI'];
             $patharr = explode('/',trim($path,'/'));
-            p($patharr);
+            if (isset($patharr[0])){
+                $this->ctrl = $patharr[0];
+            }
+            if (isset($patharr[1])){
+                $this->action = $patharr[1];
+            }else{
+                $this->action = 'index';
+            }
         }else{
             $this->ctrl = 'index';
             $this->ctrl = 'index';

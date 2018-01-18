@@ -8,6 +8,7 @@ class imooc
     static public function run()
     {
         $route = new \core\lib\route();
+        p($route);
     }
 
     static public function load($class)
