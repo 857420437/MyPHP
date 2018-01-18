@@ -35,6 +35,7 @@ class route
             $count = count($patharr)+2;
             $i = 2;
             p($patharr);
+            p($_GET);
             while ($i<$count){
                 if (isset($patharr[$i+1])) {
                     $_GET[$patharr[$i]] = $patharr[$i + 1];
