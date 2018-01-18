@@ -5,7 +5,7 @@
  * 2.加载函数库
  * 3.启动框架.
  */
-define('MYPHP',realpath('./'));
+define('MYPHP',realpath(' /'));
 define('CORE',MYPHP.'core');
 define('APP',MYPHP.'dapp');
 
