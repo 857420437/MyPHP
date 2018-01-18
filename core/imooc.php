@@ -15,7 +15,7 @@ class imooc
         if (is_file($ctrlfile)){
             include $ctrlfile;
             $ctrl = new $cltrlClass();
-            $ctrl->action();
+            $ctrl->$action();
         }else{
             throw new \Exception('找不到控制器'.$ctrlClass);
         }
