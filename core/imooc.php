@@ -7,7 +7,6 @@ class imooc
 
     static public function run()
     {
-        p('ok');
         $route = new \core\lib\route();
     }
 
