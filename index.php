@@ -5,9 +5,9 @@
  * 2.加载函数库
  * 3.启动框架.
  */
-define('MYPHP',realpath('./'));
-define('CORE',MYPHP.'/core');
-define('APP',MYPHP.'/app');
+define('IMOOC',realpath('./'));
+define('CORE',IMOOC.'/core');
+define('APP',IMOOC.'/app');
 
 define('DEBUG',true);
 
