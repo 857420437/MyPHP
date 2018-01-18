@@ -40,7 +40,8 @@ class route
                 }
                 $i = $i+2;
             }
-            p($_GET);
+
+
         }else{
             $this->ctrl = 'index';
             $this->ctrl = 'index';
