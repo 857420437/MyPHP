@@ -18,4 +18,7 @@ if (DEBUG){
 }
 
 include CORE.'/common/function.php';
-p(MYPHP);
+
+include CORE.'/imooc.php';
+
+\core\imooc::run();
