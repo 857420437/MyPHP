@@ -5,7 +5,7 @@
  * Date: 2018/1/18
  * Time: 上午10:13
  */
-namespace core;
+namespace core\lib;
 class route
 {
     public function __construct()
