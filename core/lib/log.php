@@ -10,7 +10,7 @@ class log
 {
     static $class;
     static public function init(){
-        $drive = conf::get('DRVIE','log');
+        $drive = conf::get('DRIVE','log');
         $class = '\core\lib\drive\log\\'.$drive;
         self::$class = new $class;
     }
